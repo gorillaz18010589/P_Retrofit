@@ -15,6 +15,13 @@ public class Post {
     private String text; //自訂的名稱對應此欄位
 
 
+    //2.Post用物件實體化時把值帶入Body
+    public Post(int userId, String title, String text) {
+        this.userId = userId;
+        this.title = title;
+        this.text = text;
+    }
+
     public int getUserId() {
         return userId;
     }
